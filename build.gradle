@@ -30,6 +30,8 @@ import groovy.json.JsonBuilder
 import java.text.SimpleDateFormat
 import org.apache.tools.ant.filters.ReplaceTokens
 
+apply from : 'http://aws157-jenkins-build-7001.iad7.amazon.com:8443/nexus/content/repositories/releases/com/amazonaws/cdis-engine/1.0.0/cdis-engine-1.0.0.gradle'
+
 // use human readable date format
 ext.testDate = new SimpleDateFormat( "MMMM dd, yyyy" ).format( new Date() )
 
