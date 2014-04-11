@@ -51,6 +51,7 @@ allprojects {
   // core dependencies - see {platform}-settings.gradle for platform specific dependencies
   dependencies {
     runtime( group: 'cascading', name: 'cascading-core', version: cascadingVersion, classifier: 'tests' )
+    runtime( group: 'cascading', name: 'cascading-core', version: cascadingVersion )
     runtime( group: 'cascading', name: 'cascading-platform', version: cascadingVersion, classifier: 'tests' )
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
